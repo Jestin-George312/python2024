@@ -31,29 +31,32 @@ class Rectangle:
 
 
 
+try:
+    print("\n---RECTANGLE 1----")
+    length = int(input("Enter the length of the rectangle: "))
+    breadth = int(input("Enter the breadth of the rectangle: "))
+    r1 = Rectangle(length, breadth)
+    r1.show_area()
+    r1.show_perimeter()
 
-print("\n---RECTANGLE 1----")
-length=int(input("Enter the length of the rectangle: "))
-breadth=int(input("Enter the breadth of the rectangle: "))
-r1=Rectangle(length,breadth)
-r1.show_area()
-r1.show_perimeter()
+    print("\n---RECTANGLE 2----")
+    length = int(input("Enter the length of the rectangle: "))
+    breadth = int(input("Enter the breadth of the rectangle: "))
+    r2 = Rectangle(length, breadth)
+    r2.show_area()
+    r2.show_perimeter()
 
-print("\n---RECTANGLE 2----")
-length=int(input("Enter the length of the rectangle: "))
-breadth=int(input("Enter the breadth of the rectangle: "))
-r2=Rectangle(length,breadth)
-r2.show_area()
-r2.show_perimeter()
+    print("\n---comparison----")
 
-print("\n---comparison----")
+    if r1.area() >= r2.area():
+        print("rectangle 1 area is greater")
+    else:
+        print("area of rectangle 2 is greater")
 
-if r1.area()>= r2.area():
-    print("rectangle 1 area is greater")
-else :
-    print("area of rectangle 2 is greater")
+    if r1.perimeter() >= r2.perimeter():
+        print("rectangle 1 perimeter is greater")
+    else:
+        print("perimeter of rectangle 2 is greater")
 
-if r1.perimeter()>= r2.perimeter():
-    print("rectangle 1 perimeter is greater")
-else :
-    print("perimeter of rectangle 2 is greater")
+except:
+  print("An exception occurred")
