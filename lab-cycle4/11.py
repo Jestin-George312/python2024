@@ -58,5 +58,5 @@ try:
     else:
         print("perimeter of rectangle 2 is greater")
 
-except:
-  print("An exception occurred")
+except Exception as e:
+  print(f"An exception occurred :{e}.please try again!")
