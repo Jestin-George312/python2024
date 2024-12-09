@@ -1,0 +1,6 @@
+SNO,COLOR,CODE
+1,red,#ff0000
+2,yellow,#FFFF00
+3,orange,#FFA500
+4,purle,#A020F0
+5,indigo,#4B0082
